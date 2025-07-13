@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+@tailwind utilities;
+@theme {
+    --color-primary: #171717;
+    --color-secondary: #fd6f00;
+    --color-black: #1e1e1e;
+    --color-grey: #7b7b7b;
+    --color-light: #c2c2c2;
+    --color-white: #f8f8f8;
+}
+
+@layer utilities {
+    .nav {
+        @apply text-black font-bold text-base relative;
+    }
+    .nav::after {
+        @apply content-[''] bg-black h-[1px] w-[0%] left-0 -bottom-[0px] absolute duration-300 scale-x-0;
+    }
+    .nav:hover::after {
+        @apply w-[100%];
+    }
+    .white-button {
+        @apply text-black border border-black font-bold text-sm py-4 px-8 hover:border-l hover:border-l-white hover:bg-black hover:text-white duration-300;
+    }
+    .black-button {
+        @apply text-white border border-black bg-black font-bold text-sm py-4 px-8;
+    }
+}
+
+body {
+    font-family: 'Geist', sans-serif;
+	color: #1e1e1e;
+}

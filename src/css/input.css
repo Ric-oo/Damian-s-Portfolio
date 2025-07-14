@@ -7,6 +7,14 @@
     --color-grey: #7b7b7b;
     --color-light: #c2c2c2;
     --color-white: #f8f8f8;
+    --breakpoint-mobile-sm: 480px;
+    --breakpoint-mobile: 640px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-laptop-sm: 1024px;
+    --breakpoint-laptop: 1280px;
+    --breakpoint-desktop: 1440px;
+    --breakpoint-desktop-lg: 1600px;
+    --breakpoint-desktop-xl: 1920px;
 }
 
 @layer utilities {
@@ -25,9 +33,13 @@
     .black-button {
         @apply text-white border border-black bg-black font-bold text-sm py-4 px-8;
     }
+    .card {
+        @apply bg-secondary p-8 flex flex-col max-w-[327px] max-h-fit;
+    }
 }
 
 body {
     font-family: 'Geist', sans-serif;
-	color: #1e1e1e;
+    color: #1e1e1e;
+    overflow-x: hidden;
 }

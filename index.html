@@ -14,25 +14,26 @@
 <body class="bg-white">
 	<!-- navbar -->
 	<nav class="pt-[32px] px-16 flex justify-center">
-		<div class="flex items-center gap-[300px] max-w-[1440px]">
+		<div class="flex items-center tablet:gap-[500px] laptop-sm:gap-[100px] laptop:gap-[220px] desktop:gap-[300px] tablet:max-w-[768px] laptop-sm:max-w-[1024px] laptop:max-w-[1280px] desktop:max-w-[1440px]">
 			<div class="flex items-center gap-3">
 				<img class="max-w-7" src="/src/asset/icon/logo.png" alt="">
 				<h1 class="font-bold text-2xl text-black">Portfolio</h1>
 			</div>
-			<div class="flex gap-8">
+			<div class="mobile-sm:hidden laptop-sm:flex gap-8 ">
 				<a href="#" class="nav">Home</a>
 				<a href="#" class="nav">Service</a>
 				<a href="#" class="nav">Projects</a>
 				<a href="#" class="nav">Blogs</a>
 				<a href="#" class="nav">Contacts</a>
 			</div>
-			<a class="white-button" href="#">Lets Talk</a>
+			<a class="white-button mobile-sm:hidden laptop-sm:flex" href="#">Lets Talk</a>
+			<a class="max-w-6 mobile-sm:flex laptop-sm:hidden" href="#"><img src="/src/asset/icon/ham-menu.png" alt=""></a>
 		</div>
 	</nav>
 	<!-- navbar -->
 	<!-- hero -->
-	<section class="pl-16 pr-14 relative">
-		<div class="flex justify-between max-w-[1440px]">
+	<section class="flex justify-center pl-16 pr-14 relative">
+		<div class="flex gap-28 max-w-[1440px]">
 			<div class="flex flex-col gap-8 py-[87px]">
 				<div class="space-y-4 flex flex-col">
 					<span class="font-bold text-6xl">Hi! I’m Damian.</span>
@@ -74,8 +75,8 @@
 	</section>
 	<!-- hero -->
 	<!-- project -->
-	<section class="py-28 px-12">
-		<div class="flex justify-between">
+	<section class="flex justify-center py-28 px-12">
+		<div class="flex gap-16">
 			<div class="my-4 w-[60%] max-w-[770px] gap-11 flex flex-col">
 				<div class="flex flex-col gap-4">
 					<div class="flex gap-4 items-center">
@@ -140,7 +141,163 @@
 		</div>
 	</section>
 	<!-- project -->
-
+	<!-- recent -->
+	<section class="bg-primary">
+		<div class="max-w-[1440px] py-[50px]">
+			<div class="flex flex-col mb-[28px] items-center">
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+				<h1 class="font-semibold text-white text-[40px]">Recent Projects</h1>
+			</div>
+			<div class="flex-col">
+				<hr class="text-white">
+				<div class="flex">
+					<div class="p-12 border-r border-white">
+						<img class="max-w-[671px]" src="/src/asset/image/project-1.png" alt="">
+					</div>
+					<div class="py-16 px-12 flex flex-col gap-11">
+						<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Landing Page
+							Website</h1>
+						<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface</h1>
+						<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+							href="#">View More</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-col">
+				<hr class="text-white">
+				<div class="flex">
+					<div class="p-12 border-r border-white">
+						<img class="max-w-[671px]" src="/src/asset/image/project-2.png" alt="">
+					</div>
+					<div class="py-16 px-12 flex flex-col gap-11">
+						<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Mobile App UI/UX
+							Design</h1>
+						<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface</h1>
+						<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+							href="#">View More</a>
+					</div>
+				</div>
+			</div>
+			<div class="flex-col">
+				<hr class="text-white">
+				<div class="flex">
+					<div class="p-12 border-r border-white">
+						<img class="max-w-[671px]" src="/src/asset/image/project-3.png" alt="">
+					</div>
+					<div class="py-16 px-12 flex flex-col gap-11">
+						<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">E-commerce
+							Platform / Website</h1>
+						<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface</h1>
+						<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+							href="#">View More</a>
+					</div>
+				</div>
+			</div>
+			<hr class="text-white">
+		</div>
+	</section>
+	<!-- recent -->
+	<!-- card -->
+	<section class="flex justify-center">
+		<div class="max-w-[1440px] py-28 px-5 flex gap-8">
+			<div class="card rotate-3 mt-36">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Ui Design</h1>
+							<h1 class="font-normal text-base text-white">We design beautiful and intuitive interfaces
+								that users love to interact with. Let’s shape seamless digital experiences
+								together!</h1>
+						</div>
+						<img src="/src/asset/image/card-1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card -rotate-2 mb-32">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Ux Design</h1>
+							<h1 class="font-normal text-base text-white">User experience is everything. We craft
+								meaningful journeys based on real needs. Let’s build with empathy and clarity!</h1>
+						</div>
+						<img src="/src/asset/image/card-2.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card rotate-3 mt-56">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Front End</h1>
+							<h1 class="font-normal text-base text-white">We turn designs into responsive, functional
+								interfaces using modern web technology. Let’s bring visuals to life with
+								clean code!</h1>
+						</div>
+						<img src="/src/asset/image/card-3.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card -rotate-3 mt-20">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Graphic Design</h1>
+							<h1 class="font-normal text-base text-white">Visual storytelling is at the heart of every
+								project we do. Let’s bring creative concepts to life through impactful
+								design!</h1>
+						</div>
+						<img src="/src/asset/image/card-4.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- card -->
+	 <!-- damian -->
+	  <!-- <section>
+		<div class="relative">
+			<h1 class="relative left-[200px] text-[200px] font-semibold text-primary">DAMIAN - FRANK</h1>
+		</div>
+	  </section> -->
+	 <!-- damian -->
+	  
 </body>
 
 </html>

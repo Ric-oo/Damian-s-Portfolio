@@ -199,9 +199,6 @@
   .left-\[200px\] {
     left: 200px;
   }
-  .-z-10 {
-    z-index: calc(10 * -1);
-  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
@@ -340,11 +337,29 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .gap-24 {
+    gap: calc(var(--spacing) * 24);
+  }
   .gap-28 {
     gap: calc(var(--spacing) * 28);
   }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
+  .gap-\[50px\] {
+    gap: 50px;
+  }
+  .gap-\[60px\] {
+    gap: 60px;
+  }
   .gap-\[92px\] {
     gap: 92px;
+  }
+  .gap-\[100px\] {
+    gap: 100px;
+  }
+  .gap-\[px\] {
+    gap: px;
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -506,6 +521,12 @@
   }
   .text-\[200px\] {
     font-size: 200px;
+  }
+  .text-\[380px\] {
+    font-size: 380px;
+  }
+  .text-\[400px\] {
+    font-size: 400px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);

@@ -9,13 +9,14 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-white">
 	<!-- navbar -->
 	<nav class="pt-[32px] px-16 flex justify-center">
 		<div
-			class="flex items-center tablet:gap-[500px] laptop-sm:gap-[100px] laptop:gap-[220px] desktop:gap-[300px] tablet:max-w-[768px] laptop-sm:max-w-[1024px] laptop:max-w-[1280px] desktop:max-w-[1440px]">
+			class="flex items-center tablet:gap-[440px] laptop-sm:gap-[100px] laptop:gap-[220px] desktop:gap-[300px] tablet:max-w-[768px] laptop-sm:max-w-[1024px] laptop:max-w-[1280px] desktop:max-w-[1440px]">
 			<div class="flex items-center gap-3">
 				<img class="max-w-7" src="/src/asset/icon/logo.png" alt="">
 				<h1 class="font-bold text-2xl text-black">Portfolio</h1>
@@ -35,46 +36,70 @@
 	<!-- navbar -->
 	<!-- hero -->
 	<section class="flex justify-center pl-16 pr-14 relative">
-		<div class="flex gap-28 max-w-[1440px]">
+		<div class="flex tablet:flex-row mobile-sm:flex-col laptop-sm:gap-8 laptop:gap-28 max-w-[1440px]">
 			<div class="flex flex-col gap-8 py-[87px]">
 				<div class="space-y-4 flex flex-col">
-					<span class="font-bold text-6xl">Hi! I’m Damian.</span>
-					<span class="font-bold text-6xl flex items-center gap-2">An Ui/Ux <img class="max-h-[52px]"
-							src="/src/asset/icon/logo.png" alt=""></span>
-					<span class="font-bold text-6xl">Designer</span>
-					<span class="font-bold text-6xl">Based In London</span>
+					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl">Hi! I’m Damian.</span>
+					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl flex items-center gap-2">An Ui/Ux <img
+							class="max-h-[52px]" src="/src/asset/icon/logo.png" alt=""></span>
+					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl">Designer</span>
+					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl">Based In London</span>
 				</div>
 				<div class="flex gap-5 items-center">
-					<h1 class="font-bold text-3xl">Design</h1>
+					<h1 class="font-bold laptop-sm:text-2xl laptop:text-3xl">Design</h1>
 					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="font-bold text-3xl">Development</h1>
+					<h1 class="font-bold laptop-sm:text-2xl laptop:text-3xl">Development</h1>
 					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="font-bold text-3xl">Web</h1>
+					<h1 class="font-bold laptop-sm:text-2xl laptop:text-3xl">Web</h1>
 				</div>
 				<div class="flex">
 					<a class="black-button" href="#">Got a Project?</a>
 					<a class="white-button" href="#">Lets Talk</a>
 				</div>
 			</div>
-			<img class="max-w-[640px]" src="/src/asset/image/damian.png" alt="">
+			<img class="laptop-sm:max-w-[560px] laptop:max-w-[640px]" src="/src/asset/image/damian.png" alt="">
 		</div>
 	</section>
-	<section class="-rotate-3">
-		<div class="py-9 px-2.5 bg-primary flex justify-around items-center">
-			<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-			<h1 class="text-white font-bold text-2xl">Ui Design</h1>
-			<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-			<h1 class="text-white font-bold text-2xl">Ux Design</h1>
-			<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-			<h1 class="text-white font-bold text-2xl">Front End</h1>
-			<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-			<h1 class="text-white font-bold text-2xl">Back End</h1>
-			<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-			<h1 class="text-white font-bold text-2xl">Graphic Design</h1>
-			<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-			<h1 class="text-white font-bold text-2xl">Motion Graphic</h1>
+	<div class="-rotate-3 swiper pointer-events-none">
+		<div class="swiper-wrapper py-9 px-4 bg-primary flex items-center">
+			<div class="swiper-slide">
+				<div class="flex gap-11 items-center">
+					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<h1 class="text-white font-bold text-2xl">Ui Design</h1>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="flex gap-11 items-center">
+					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<h1 class="text-white font-bold text-2xl">Ux Design</h1>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="flex gap-11 items-center">
+					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<h1 class="text-white font-bold text-2xl">Front End</h1>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="flex gap-11 items-center">
+					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<h1 class="text-white font-bold text-2xl">Back End</h1>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="flex gap-11 items-center">
+					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<h1 class="text-white font-bold text-2xl">Graphic Design</h1>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="flex gap-11 items-center">
+					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<h1 class="text-white font-bold text-2xl">Motion Graphic</h1>
+				</div>
+			</div>
 		</div>
-	</section>
+	</div>
 	<!-- hero -->
 	<!-- project -->
 	<section class="flex justify-center py-28 px-12">
@@ -145,53 +170,63 @@
 	<!-- project -->
 	<!-- recent -->
 	<section class="bg-primary">
-		<div class="max-w-[1440px] py-[50px]">
+		<div class="py-[50px]">
 			<div class="flex flex-col mb-[28px] items-center">
 				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
 				<h1 class="font-semibold text-white text-[40px]">Recent Projects</h1>
 			</div>
-			<div class="flex-col">
+			<div class="flex flex-col">
 				<hr class="text-white">
-				<div class="flex">
-					<div class="p-12 border-r border-white">
-						<img class="max-w-[671px]" src="/src/asset/image/project-1.png" alt="">
-					</div>
-					<div class="py-16 px-12 flex flex-col gap-11">
-						<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Landing Page
-							Website</h1>
-						<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface</h1>
-						<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
-							href="#">View More</a>
+				<div class="flex justify-center">
+					<div class="flex items-center max-w-[1440px]">
+						<div class="p-12 border-r border-white">
+							<img class="max-w-[671px] hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/project-1.png" alt="">
+						</div>
+						<div class="py-16 px-12 flex flex-col gap-11">
+							<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Landing Page
+								Website</h1>
+							<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface
+							</h1>
+							<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+								href="#">View More</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex-col">
+			<div class="flex flex-col">
 				<hr class="text-white">
-				<div class="flex">
-					<div class="p-12 border-r border-white">
-						<img class="max-w-[671px]" src="/src/asset/image/project-2.png" alt="">
-					</div>
-					<div class="py-16 px-12 flex flex-col gap-11">
-						<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Mobile App UI/UX
-							Design</h1>
-						<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface</h1>
-						<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
-							href="#">View More</a>
+				<div class="flex justify-center">
+					<div class="flex max-w-[1440px]">
+						<div class="p-12 border-r border-white">
+							<img class="max-w-[671px] hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/project-2.png" alt="">
+						</div>
+						<div class="py-16 px-12 flex flex-col gap-11">
+							<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Mobile App
+								UI/UX
+								Design</h1>
+							<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface
+							</h1>
+							<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+								href="#">View More</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex-col">
+			<div class="flex flex-col">
 				<hr class="text-white">
-				<div class="flex">
-					<div class="p-12 border-r border-white">
-						<img class="max-w-[671px]" src="/src/asset/image/project-3.png" alt="">
-					</div>
-					<div class="py-16 px-12 flex flex-col gap-11">
-						<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">E-commerce
-							Platform / Website</h1>
-						<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface</h1>
-						<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
-							href="#">View More</a>
+				<div class="flex justify-center">
+					<div class="flex max-w-[1440px]">
+						<div class="p-12 border-r border-white">
+							<img class="max-w-[671px] hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/project-3.png" alt="">
+						</div>
+						<div class="py-16 px-12 flex flex-col gap-11">
+							<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">E-commerce
+								Platform / Website</h1>
+							<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface
+							</h1>
+							<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+								href="#">View More</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -202,7 +237,7 @@
 	<!-- card -->
 	<section class="flex justify-center">
 		<div class="max-w-[1440px] py-28 px-5 flex gap-8">
-			<div class="card rotate-3 mt-36">
+			<div class="card rotate-3 mt-36 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center">
@@ -224,7 +259,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card -rotate-2 mb-32">
+			<div class="card -rotate-2 mb-32 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center">
@@ -245,7 +280,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card rotate-3 mt-56">
+			<div class="card rotate-3 mt-56 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center">
@@ -267,7 +302,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card -rotate-3 mt-20">
+			<div class="card -rotate-3 mt-20 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
 					<div class="flex items-center justify-between">
 						<div class="flex items-center">
@@ -306,7 +341,7 @@
 			</div>
 			<div class="flex gap-5">
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img src="/src/asset/image/blog-1.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-1.png" alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -318,14 +353,15 @@
 						<div class="flex justify-between items-center">
 							<h1 class="font-semibold text-2xl text-primary">From Sketch to Screen: My <br>
 								Workflow as a Front-End Developer</h1>
-							<div class="p-4 bg-secondary rounded-4xl">
+							<a href="#"
+								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
 								<img class="max-w-6" src="/src/asset/icon/white-arrow.png" alt="">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img src="/src/asset/image/blog-2.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-2.png" alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -337,16 +373,17 @@
 						<div class="flex justify-between items-center">
 							<h1 class="font-semibold text-2xl text-primary">Design in Motion: How Motion<br>
 								Graphics Enhance User Experience</h1>
-							<div class="p-4 bg-secondary rounded-4xl">
+							<a href="#"
+								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
 								<img class="max-w-6" src="/src/asset/icon/white-arrow.png" alt="">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="flex gap-5">
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img src="/src/asset/image/blog-3.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-3.png" alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -358,14 +395,15 @@
 						<div class="flex justify-between items-center">
 							<h1 class="font-semibold text-2xl text-primary">Creating a Strong Visual Identity<br>
 								with Graphic Design Basics</h1>
-							<div class="p-4 bg-secondary rounded-4xl">
+							<a href="#"
+								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
 								<img class="max-w-6" src="/src/asset/icon/white-arrow.png" alt="">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img src="/src/asset/image/blog-4.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-4.png" alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -377,7 +415,8 @@
 						<div class="flex justify-between items-center">
 							<h1 class="font-semibold text-2xl text-primary">UI vs UX: Simple But Vital <br>
 								Differences</h1>
-							<div class="p-4 bg-secondary rounded-4xl">
+							<div href="#"
+								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
 								<img class="max-w-6" src="/src/asset/icon/white-arrow.png" alt="">
 							</div>
 						</div>
@@ -388,10 +427,11 @@
 		<div class="p-16">
 			<div class="flex items-center gap-7">
 				<h1 class="text-primary text-9xl font-bold">HAVE A PROJECT?</h1>
-				<img class="max-w-[100px]" src="/src/asset/icon/logo.png" alt="">
+				<img class="max-w-[100px] hover:-rotate-[720deg] duration-1000" src="/src/asset/icon/logo.png" alt="">
 			</div>
 			<div class="flex items-center justify-between">
-				<a class="flex gap-4 py-4 px-8 border border-primary text-sm font-bold text-primary" href="#">Hire Me
+				<a class="flex gap-4 py-4 px-8 border border-primary text-sm font-bold text-primary hover:text-white hover:bg-primary duration-300"
+					href="#">Hire Me
 					<img class="max-w-6" src="/src/asset/icon/orange-arrow.png" alt=""></a>
 				<h2 class="text-base font-normal text-grey">Whether you need clean UI design, <br>
 					thoughtful UX, or front-end code that <br>
@@ -431,5 +471,8 @@
 	</section>
 	<!-- footer -->
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
 
 </html>

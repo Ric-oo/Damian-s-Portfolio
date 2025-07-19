@@ -22,16 +22,16 @@
         @apply text-black font-bold text-base relative;
     }
     .nav::after {
-        @apply content-[''] bg-black h-[1px] w-[0%] left-0 -bottom-[0px] absolute duration-300 scale-x-0;
+        @apply content-[''] bg-black h-[2px] w-[0%] absolute left-0 -bottom-[1px] duration-300
     }
     .nav:hover::after {
-        @apply w-[100%];
+        @apply w-full
     }
     .white-button {
-        @apply text-black border border-black font-bold text-sm py-4 px-8 hover:border-l hover:border-l-white hover:bg-black hover:text-white duration-300;
+        @apply text-black text-center border border-black font-bold text-sm tablet:py-3 tablet:px-5 laptop:py-4 laptop:px-8 hover:border-l hover:border-l-white hover:bg-black hover:text-white duration-300;
     }
     .black-button {
-        @apply text-white border border-black bg-black font-bold text-sm py-4 px-8;
+        @apply text-white text-center border border-black bg-black font-bold text-sm tablet:py-3 tablet:px-5 laptop:py-4 laptop:px-8;
     }
     .card {
         @apply bg-secondary p-8 flex flex-col max-w-[327px] max-h-fit;

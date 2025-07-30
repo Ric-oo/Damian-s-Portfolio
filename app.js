@@ -10,6 +10,13 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+const mySwiper = new Swiper('.mySwiper', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
 const swiper2 = new Swiper('.swiper2', {
     slidesPerView: 2,
     freeMode: true,

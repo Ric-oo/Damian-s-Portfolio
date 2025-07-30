@@ -16,7 +16,7 @@
 	<!-- navbar -->
 	<nav class="pt-[32px] px-16 flex justify-center">
 		<div
-			class="flex items-center tablet:gap-[440px] laptop-sm:gap-[100px] laptop:gap-[220px] desktop:gap-[300px] tablet:max-w-[768px] laptop-sm:max-w-[1024px] laptop:max-w-[1280px] desktop:max-w-[1440px]">
+			class="flex items-center mobile-sm:gap-[160px] mobile:gap-[320px] tablet:gap-[440px] laptop-sm:gap-[100px] laptop:gap-[220px] desktop:gap-[300px] mobile::max-w-[640px] tablet:max-w-[768px] laptop-sm:max-w-[1024px] laptop:max-w-[1280px] desktop:max-w-[1440px]">
 			<div class="flex items-center gap-3">
 				<img class="max-w-7" src="/src/asset/icon/logo.png" alt="">
 				<h1 class="font-bold text-2xl text-black">Portfolio</h1>
@@ -35,21 +35,26 @@
 	</nav>
 	<!-- navbar -->
 	<!-- hero -->
-	<section class="flex justify-center pl-16 pr-14 relative">
-		<div class="flex tablet:flex-row mobile-sm:flex-col laptop-sm:gap-8 laptop:gap-28 max-w-[1440px]">
-			<div class="flex flex-col gap-8 py-[87px]">
-				<div class="space-y-4 flex flex-col">
-					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl">Hi! I’m Damian.</span>
-					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl flex items-center gap-2">An Ui/Ux <img
-							class="max-h-[52px]" src="/src/asset/icon/logo.png" alt=""></span>
-					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl">Designer</span>
-					<span class="font-bold laptop-sm:text-5xl laptop:text-6xl">Based In London</span>
+	<section class="flex justify-center pl-12 pr-14 relative">
+		<div class="flex tablet:flex-row mobile-sm:flex-col laptop-sm:gap-0 laptop:gap-28 max-w-[1440px]">
+			<div class="flex flex-col mobile-sm:items-center gap-8 mobile-sm:py-[57px] laptop-sm:py-[87px]">
+				<div class="laptop-sm:space-y-4 items-center flex flex-col">
+					<span class="mobile-sm:text-3xl font-bold tablet:text-3xl laptop-sm:text-5xl laptop:text-6xl">Hi!
+						I’m Damian.</span>
+					<span
+						class="mobile-sm:text-3xl font-bold tablet:text-3xl laptop-sm:text-5xl laptop:text-6xl flex items-center gap-2">An
+						Ui/Ux <img class="mobile-sm:max-w-[30px] laptop-sm:max-h-[52px]" src="/src/asset/icon/logo.png"
+							alt=""></span>
+					<span
+						class="mobile-sm:text-3xl font-bold tablet:text-3xl laptop-sm:text-5xl laptop:text-6xl">Designer</span>
+					<span class="mobile-sm:text-3xl font-bold tablet:text-3xl laptop-sm:text-5xl laptop:text-6xl">Based
+						In London</span>
 				</div>
-				<div class="flex gap-5 items-center">
+				<div class="flex mobile-sm:gap-3 laptop-sm:gap-5 items-center">
 					<h1 class="font-bold laptop-sm:text-2xl laptop:text-3xl">Design</h1>
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<img class="mobile-sm:max-w-5 laptop-sm:max-w-7" src="/src/asset/icon/orange-star.png" alt="">
 					<h1 class="font-bold laptop-sm:text-2xl laptop:text-3xl">Development</h1>
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+					<img class="mobile-sm:max-w-5 laptop-sm:max-w-7" src="/src/asset/icon/orange-star.png" alt="">
 					<h1 class="font-bold laptop-sm:text-2xl laptop:text-3xl">Web</h1>
 				</div>
 				<div class="flex">
@@ -57,111 +62,125 @@
 					<a class="white-button" href="#">Lets Talk</a>
 				</div>
 			</div>
-			<img class="laptop-sm:max-w-[560px] laptop:max-w-[640px]" src="/src/asset/image/damian.png" alt="">
+			<img class="mobile-sm:max-h-[403px] laptop-sm:max-h-[560px] laptop:max-h-[640px]"
+				src="/src/asset/image/damian.png" alt="">
 		</div>
 	</section>
-	<div class="-rotate-3 swiper pointer-events-none">
-		<div class="swiper-wrapper py-9 px-4 bg-primary flex items-center">
+	<div class="-rotate-3 swiper bg-primary">
+		<div class="swiper-wrapper flex py-9 px-4 items-center">
 			<div class="swiper-slide">
-				<div class="flex gap-11 items-center">
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="text-white font-bold text-2xl">Ui Design</h1>
-				</div>
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
 			</div>
 			<div class="swiper-slide">
-				<div class="flex gap-11 items-center">
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="text-white font-bold text-2xl">Ux Design</h1>
-				</div>
+				<h1 class="text-white font-bold tablet:text-xl desktop:text-2xl">Ui Design</h1>
 			</div>
 			<div class="swiper-slide">
-				<div class="flex gap-11 items-center">
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="text-white font-bold text-2xl">Front End</h1>
-				</div>
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
 			</div>
 			<div class="swiper-slide">
-				<div class="flex gap-11 items-center">
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="text-white font-bold text-2xl">Back End</h1>
-				</div>
+				<h1 class="text-white font-bold tablet:text-xl desktop:text-2xl">Ux Design</h1>
 			</div>
 			<div class="swiper-slide">
-				<div class="flex gap-11 items-center">
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="text-white font-bold text-2xl">Graphic Design</h1>
-				</div>
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
 			</div>
 			<div class="swiper-slide">
-				<div class="flex gap-11 items-center">
-					<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-					<h1 class="text-white font-bold text-2xl">Motion Graphic</h1>
-				</div>
+				<h1 class="text-white font-bold tablet:text-xl desktop:text-2xl">Front End</h1>
+			</div>
+			<div class="swiper-slide">
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<h1 class="text-white font-bold tablet:text-xl desktop:text-2xl">Back End</h1>
+			</div>
+			<div class="swiper-slide">
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<h1 class="text-white font-bold tablet:text-xl desktop:text-2xl">Graphic Designer</h1>
+			</div>
+			<div class="swiper-slide">
+				<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<h1 class="text-white font-bold tablet:text-xl desktop:text-2xl">Motion Graphic</h1>
 			</div>
 		</div>
 	</div>
 	<!-- hero -->
 	<!-- project -->
 	<section class="flex justify-center py-28 px-12">
-		<div class="flex gap-16">
-			<div class="my-4 w-[60%] max-w-[770px] gap-11 flex flex-col">
+		<div
+			class="flex mobile-sm:flex-col mobile-sm:items-center tablet:flex-row laptop-sm:max-w-[1024px] laptop:max-w-[1280px] desktop:max-w-[1440px] gap-16">
+			<div class="my-4 laptop-sm:w-[70%] desktop:w-[60%] desktop:max-w-[770px] gap-11 flex flex-col">
 				<div class="flex flex-col gap-4">
 					<div class="flex gap-4 items-center">
 						<img class="max-w-7" src="/src/asset/icon/orange-star.png" alt="">
-						<h1 class="font-semibold text-[40px] text-black">Damian Frank</h1>
+						<h1 class="font-semibold mobile-sm:text-2xl laptop-sm:text-[40px] text-black">Damian Frank</h1>
 					</div>
-					<h1 class="font-normal text-base text-grey w-[70%]">I’m a UI/UX Designer and Web Developer who loves
+					<h1 class="font-normal text-base text-grey laptop-sm:w-full laptop:w-[70%]">I’m a UI/UX Designer and
+						Web Developer who loves
 						crafting clean, user-friendly digital experiences through thoughtful
 						design and modern front-end development.<br>
 						Ready to start your next project with me?</h1>
 				</div>
 				<hr class="text-grey">
-				<div class="flex gap-20">
+				<div class="flex mobile-sm:gap-10 laptop-sm:gap-8 laptop:gap-20">
 					<div class="flex flex-col gap-20">
 						<div class="flex flex-col gap-1">
 							<h1 class="font-medium text-base text-secondary">Job</h1>
-							<h1 class="font-semibold text-2xl text-primary">Ui/Ux Designer</h1>
+							<h1 class="font-semibold laptop-sm:text-base laptop:text-2xl text-primary">Ui/Ux Designer
+							</h1>
 						</div>
 						<div class="flex flex-col gap-1">
 							<h1 class="font-medium text-base text-secondary">Phone</h1>
-							<h1 class="font-semibold text-2xl text-primary">+44 20 7946 0123</h1>
+							<h1 class="font-semibold laptop-sm:text-base laptop:text-2xl text-primary">+44 20 7946 0123
+							</h1>
 						</div>
 					</div>
 					<div class="flex flex-col gap-20">
 						<div class="flex flex-col gap-1">
 							<h1 class="font-medium text-base text-secondary">Born In</h1>
-							<h1 class="font-semibold text-2xl text-primary">London</h1>
+							<h1 class="font-semibold laptop-sm:text-base laptop:text-2xl text-primary">London</h1>
 						</div>
 						<div class="flex flex-col gap-1">
 							<h1 class="font-medium text-base text-secondary">Age</h1>
-							<h1 class="font-semibold text-2xl text-primary">30</h1>
+							<h1 class="font-semibold laptop-sm:text-base laptop:text-2xl text-primary">30</h1>
 						</div>
 					</div>
 					<div class="flex flex-col gap-20">
 						<div class="flex flex-col gap-1">
 							<h1 class="font-medium text-base text-secondary">Date Of Birth</h1>
-							<h1 class="font-semibold text-2xl text-primary">21 March 1995</h1>
+							<h1 class="font-semibold laptop-sm:text-base laptop:text-2xl text-primary">21 March 1995
+							</h1>
 						</div>
 						<div class="flex flex-col gap-1">
 							<h1 class="font-medium text-base text-secondary">Email</h1>
-							<h1 class="font-semibold text-2xl text-primary">damian@gmail.com</h1>
+							<h1 class="font-semibold laptop-sm:text-base laptop:text-2xl text-primary">damian@gmail.com
+							</h1>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div>
-				<div>
-					<div class="px-40 py-3 border-2 border-black text-center">
-						<h1 class="font-bold text-[64px] text-black">240<span class="text-secondary">+</span></h1>
-						<h1 class="font-medium text-[20px] text-grey">Satisfied Client</h1>
+				<div class="flex mobile-sm:flex-row tablet:flex-col">
+					<div
+						class="mobile-sm:p-5 tablet:px-10 tablet:py-3 laptop-sm:px-24 laptop:px-32 desktop:px-40 py-3 border-2 border-black text-center">
+						<h1 class="font-bold mobile-sm:text-[32px] laptop-sm:text-[64px] text-black">240<span
+								class="text-secondary">+</span></h1>
+						<h1 class="font-medium tablet:text-sm laptop-sm:text-[20px] text-grey">Satisfied Client</h1>
 					</div>
-					<div class="px-40 py-3 border-2 border-black bg-black text-center">
-						<h1 class="font-bold text-[64px] text-white">380<span class="text-secondary">+</span></h1>
-						<h1 class="font-medium text-[20px] text-[#C2C2C2]">Project Complete</h1>
+					<div
+						class="mobile-sm:p-5 tablet:px-10 tablet:py-3 laptop-sm:px-24 laptop:px-32 desktop:px-40 py-3 border-2 border-black bg-black text-center">
+						<h1 class="font-bold mobile-sm:text-[32px] laptop-sm:text-[64px] text-white">380<span
+								class="text-secondary">+</span></h1>
+						<h1 class="font-medium tablet:text-sm laptop-sm:text-[20px] text-[#C2C2C2]">Project Complete
+						</h1>
 					</div>
-					<div class="px-40 py-3 border-2 border-black text-center">
-						<h1 class="font-bold text-[64px] text-black">11<span class="text-secondary">+</span></h1>
-						<h1 class="font-medium text-[20px] text-grey">Year Of Experences</h1>
+					<div
+						class="mobile-sm:p- 5tablet:px-10 tablet:py-3 laptop-sm:px-24 laptop:px-32 desktop:px-40 py-3 border-2 border-black text-center">
+						<h1 class="font-bold mobile-sm:text-[32px] laptop-sm:text-[64px] text-black">11<span
+								class="text-secondary">+</span></h1>
+						<h1 class="font-medium tablet:text-sm laptop-sm:text-[20px] text-grey">Year Of Experences</h1>
 					</div>
 				</div>
 			</div>
@@ -178,16 +197,22 @@
 			<div class="flex flex-col">
 				<hr class="text-white">
 				<div class="flex justify-center">
-					<div class="flex items-center max-w-[1440px]">
-						<div class="p-12 border-r border-white">
-							<img class="max-w-[671px] hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/project-1.png" alt="">
+					<div class="flex mobile-sm:flex-col tablet:flex-row items-center max-w-[1440px]">
+						<div class="p-12 mobile-sm:border-0 tablet:border-r border-white">
+							<img class="tablet:max-w-[300px] laptop-sm:max-w-[440px] laptop:max-w-[560px] desktop:max-w-[671px] hover:transform hover:-translate-y-2 duration-300"
+								src="/src/asset/image/project-1.png" alt="">
 						</div>
-						<div class="py-16 px-12 flex flex-col gap-11">
-							<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Landing Page
+						<div class="py-16 px-12 flex flex-col tablet:gap-4 laptop:gap-6 desktop:gap-11">
+							<h1
+								class="py-3 px-5 text-white tablet:text-[12px] laptop-sm:text-xl laptop:text-2xl font-semibold bg-secondary max-w-fit">
+								Landing Page
 								Website</h1>
-							<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface
+							<h1
+								class="tablet:text-2xl laptop-sm:text-[32px] laptop:text-[40px] desktop:text-[50px] text-white font-semibold">
+								Beautiful and
+								advanced website interface
 							</h1>
-							<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+							<a class="underline underline-offset-2 text-grey tablet:text-[12px] laptop-sm:text-base font-semibold hover:text-white duration-300"
 								href="#">View More</a>
 						</div>
 					</div>
@@ -196,17 +221,22 @@
 			<div class="flex flex-col">
 				<hr class="text-white">
 				<div class="flex justify-center">
-					<div class="flex max-w-[1440px]">
-						<div class="p-12 border-r border-white">
-							<img class="max-w-[671px] hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/project-2.png" alt="">
+					<div class="flex mobile-sm:flex-col tablet:flex-row max-w-[1440px]">
+						<div class="p-12 mobile-sm:border-0 tablet:border-r border-white">
+							<img class="tablet:max-w-[300px] laptop-sm:max-w-[440px] laptop:max-w-[560px] desktop:max-w-[671px] hover:transform hover:-translate-y-2 duration-300"
+								src="/src/asset/image/project-2.png" alt="">
 						</div>
-						<div class="py-16 px-12 flex flex-col gap-11">
-							<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">Mobile App
+						<div class="py-16 px-12 flex flex-col tablet:gap-4 laptop:gap-6 desktop:gap-11">
+							<h1
+								class="py-3 px-5 text-white tablet:text-[12px] laptop-sm:text-xl laptop:text-2xl font-semibold bg-secondary max-w-fit">
+								Mobile App
 								UI/UX
 								Design</h1>
-							<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface
+							<h1
+								class="tablet:text-2xl laptop-sm:text-[32px] laptop:text-[40px] desktop:text-[50px]	 text-white font-semibold">
+								Beautiful and advanced website interface
 							</h1>
-							<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+							<a class="underline underline-offset-2 text-grey tablet:text-[12px] laptop-sm:text-base font-semibold hover:text-white duration-300"
 								href="#">View More</a>
 						</div>
 					</div>
@@ -215,16 +245,21 @@
 			<div class="flex flex-col">
 				<hr class="text-white">
 				<div class="flex justify-center">
-					<div class="flex max-w-[1440px]">
-						<div class="p-12 border-r border-white">
-							<img class="max-w-[671px] hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/project-3.png" alt="">
+					<div class="flex mobile-sm:flex-col tablet:flex-row max-w-[1440px]">
+						<div class="p-12 mobile-sm:border-0 tablet:border-r border-white">
+							<img class="tablet:max-w-[300px] laptop-sm:max-w-[440px] laptop:max-w-[560px] desktop:max-w-[671px] hover:transform hover:-translate-y-2 duration-300"
+								src="/src/asset/image/project-3.png" alt="">
 						</div>
-						<div class="py-16 px-12 flex flex-col gap-11">
-							<h1 class="py-3 px-5 text-white text-2xl font-semibold bg-secondary max-w-fit">E-commerce
+						<div class="py-16 px-12 flex flex-col tablet:gap-4 laptop:gap-6 desktop:gap-11">
+							<h1
+								class="py-3 px-5 text-white tablet:text-[12px] laptop-sm:text-xl laptop:text-2xl font-semibold bg-secondary max-w-fit">
+								E-commerce
 								Platform / Website</h1>
-							<h1 class="text-[50px] text-white font-semibold">Beautiful and advanced website interface
+							<h1
+								class="tablet:text-2xl laptop-sm:text-[32px] laptop:text-[40px] desktop:text-[50px] text-white font-semibold">
+								Beautiful and advanced website interface
 							</h1>
-							<a class="underline underline-offset-2 text-grey text-base font-semibold hover:text-white duration-300"
+							<a class="underline underline-offset-2 text-grey tablet:text-[12px] laptop-sm:text-base font-semibold hover:text-white duration-300"
 								href="#">View More</a>
 						</div>
 					</div>
@@ -236,10 +271,10 @@
 	<!-- recent -->
 	<!-- card -->
 	<section class="flex justify-center">
-		<div class="max-w-[1440px] py-28 px-5 flex gap-8">
+		<div class="max-w-[1440px] py-28 px-5 mobile-sm:hidden laptop-sm:flex gap-8">
 			<div class="card rotate-3 mt-36 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
-					<div class="flex items-center justify-between">
+					<div class="flex gap-2 items-center justify-between">
 						<div class="flex items-center">
 							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
 							<h1 class="font-semibold text-white text-base">Best Services</h1>
@@ -261,7 +296,7 @@
 			</div>
 			<div class="card -rotate-2 mb-32 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
-					<div class="flex items-center justify-between">
+					<div class="flex gap-2 items-center justify-between">
 						<div class="flex items-center">
 							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
 							<h1 class="font-semibold text-white text-base">Best Services</h1>
@@ -282,7 +317,7 @@
 			</div>
 			<div class="card rotate-3 mt-56 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
-					<div class="flex items-center justify-between">
+					<div class="flex gap-2 items-center justify-between">
 						<div class="flex items-center">
 							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
 							<h1 class="font-semibold text-white text-base">Best Services</h1>
@@ -304,7 +339,96 @@
 			</div>
 			<div class="card -rotate-3 mt-20 hover:transform hover:-translate-y-2 duration-300">
 				<div class="flex flex-col gap-[92px]">
-					<div class="flex items-center justify-between">
+					<div class="flex gap-2 items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Graphic Design</h1>
+							<h1 class="font-normal text-base text-white">Visual storytelling is at the heart of every
+								project we do. Let’s bring creative concepts to life through impactful
+								design!</h1>
+						</div>
+						<img src="/src/asset/image/card-4.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="max-w-[1440px] py-28 px-5 mobile-sm:flex laptop-sm:hidden gap-8">
+			<div class="card rotate-3 mt-36 hover:transform hover:-translate-y-2 duration-300">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex gap-2 items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Ui Design</h1>
+							<h1 class="font-normal text-base text-white">We design beautiful and intuitive interfaces
+								that users love to interact with. Let’s shape seamless digital experiences
+								together!</h1>
+						</div>
+						<img src="/src/asset/image/card-1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card -rotate-2 mb-32 hover:transform hover:-translate-y-2 duration-300">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex gap-2 items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Ux Design</h1>
+							<h1 class="font-normal text-base text-white">User experience is everything. We craft
+								meaningful journeys based on real needs. Let’s build with empathy and clarity!</h1>
+						</div>
+						<img src="/src/asset/image/card-2.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card rotate-3 mt-56 hover:transform hover:-translate-y-2 duration-300">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex gap-2 items-center justify-between">
+						<div class="flex items-center">
+							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
+							<h1 class="font-semibold text-white text-base">Best Services</h1>
+						</div>
+						<div class="border border-white rounded-4xl p-2">
+							<img class="max-w-3" src="/src/asset/icon/white-arrow.png" alt="">
+						</div>
+					</div>
+					<div class="flex flex-col gap-5">
+						<div class="flex flex-col gap-3">
+							<h1 class="font-semibold text-4xl text-white">Front End</h1>
+							<h1 class="font-normal text-base text-white">We turn designs into responsive, functional
+								interfaces using modern web technology. Let’s bring visuals to life with
+								clean code!</h1>
+						</div>
+						<img src="/src/asset/image/card-3.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card -rotate-3 mt-20 hover:transform hover:-translate-y-2 duration-300">
+				<div class="flex flex-col gap-[92px]">
+					<div class="flex gap-2 items-center justify-between">
 						<div class="flex items-center">
 							<img class="max-w-5" src="/src/asset/icon/white-star.png" alt="">
 							<h1 class="font-semibold text-white text-base">Best Services</h1>
@@ -328,8 +452,49 @@
 	</section>
 	<!-- card -->
 	<!-- damian -->
-	<section>
-		<h1>1</h1>
+	<section class="py-12">
+		<div class="relative leading-[170px]">
+			<marquee class="text-[200px] font-semibold" scrollamount="30" behavior="scroll" direction="left">DAMIAN -
+				FRANK DAMIAN - FRANK DAMIAN - FRANK</marquee>
+			<marquee class="text-[200px] font-semibold" scrollamount="30" behavior="scroll" direction="right">DAMIAN -
+				FRANK DAMIAN - FRANK DAMIAN - FRANK</marquee>
+			<marquee class="text-[200px] font-semibold" scrollamount="30" behavior="scroll" direction="left">DAMIAN -
+				FRANK DAMIAN - FRANK DAMIAN - FRANK</marquee>
+			<marquee class="text-[200px] font-semibold" scrollamount="30" behavior="scroll" direction="right">DAMIAN -
+				FRANK DAMIAN - FRANK DAMIAN - FRANK</marquee>
+			<div
+				class="absolute z-40 -rotate-2 top-[20%] left-[25%] bg-secondary max-w-[800px] p-12 flex flex-col items-center text-center gap-12">
+				<h1 class="text-2xl text-white font-normal">Design shapes how we see and feel. From visuals and motion
+					to clear UI and thoughtful UX, each
+					element works to create
+					meaningful user experiences.</h1>
+				<h1 class="text-2xl text-white font-normal">Front-end brings design to life, while back-end keeps it all
+					running smoothly. Together, they turn ideas into real,
+					usable products.</h1>
+				<hr class="text-white min-w-[560px]">
+				<div class="flex gap-1">
+					<img class="max-w-[30px]" src="/src/asset/icon/white-star.png" alt="">
+					<h1 class="text-2xl text-white font-semibold">Damian Frank</h1>
+					<img class="max-w-[30px]" src="/src/asset/icon/white-star.png" alt="">
+				</div>
+			</div>
+			<div
+				class="absolute z-20 -rotate-4 top-[20%] left-[25%] bg-primary max-w-[800px] p-12 flex flex-col items-center text-center gap-12">
+				<h1 class="text-2xl text-white font-normal">Design shapes how we see and feel. From visuals and motion
+					to clear UI and thoughtful UX, each
+					element works to create
+					meaningful user experiences.</h1>
+				<h1 class="text-2xl text-white font-normal">Front-end brings design to life, while back-end keeps it all
+					running smoothly. Together, they turn ideas into real,
+					usable products.</h1>
+				<hr class="text-white min-w-[560px]">
+				<div class="flex gap-1">
+					<img class="max-w-[30px]" src="/src/asset/icon/white-star.png" alt="">
+					<h1 class="text-2xl text-white font-semibold">Damian Frank</h1>
+					<img class="max-w-[30px]" src="/src/asset/icon/white-star.png" alt="">
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- damian -->
 	<!-- blog -->
@@ -341,7 +506,8 @@
 			</div>
 			<div class="flex gap-5">
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-1.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-1.png"
+						alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -351,7 +517,8 @@
 							<hr class="text-light">
 						</div>
 						<div class="flex justify-between items-center">
-							<h1 class="font-semibold text-2xl text-primary">From Sketch to Screen: My <br>
+							<h1 class="font-semibold laptop-sm:text-xl desktop:text-2xl text-primary">From Sketch to
+								Screen: My <br>
 								Workflow as a Front-End Developer</h1>
 							<a href="#"
 								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
@@ -361,7 +528,8 @@
 					</div>
 				</div>
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-2.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-2.png"
+						alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -371,7 +539,8 @@
 							<hr class="text-light">
 						</div>
 						<div class="flex justify-between items-center">
-							<h1 class="font-semibold text-2xl text-primary">Design in Motion: How Motion<br>
+							<h1 class="font-semibold laptop-sm:text-xl desktop:text-2xl text-primary">Design in Motion:
+								How Motion<br>
 								Graphics Enhance User Experience</h1>
 							<a href="#"
 								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
@@ -383,7 +552,8 @@
 			</div>
 			<div class="flex gap-5">
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-3.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-3.png"
+						alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -393,7 +563,8 @@
 							<hr class="text-light">
 						</div>
 						<div class="flex justify-between items-center">
-							<h1 class="font-semibold text-2xl text-primary">Creating a Strong Visual Identity<br>
+							<h1 class="font-semibold laptop-sm:text-xl desktop:text-2xl text-primary">Creating a Strong
+								Visual Identity<br>
 								with Graphic Design Basics</h1>
 							<a href="#"
 								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
@@ -403,7 +574,8 @@
 					</div>
 				</div>
 				<div class="flex flex-col max-h-[544px] gap-5">
-					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-4.png" alt="">
+					<img class="hover:transform hover:-translate-y-2 duration-300" src="/src/asset/image/blog-4.png"
+						alt="">
 					<div class="flex flex-col gap-7">
 						<div class="flex flex-col gap-4">
 							<div class="flex justify-between items-center">
@@ -413,12 +585,13 @@
 							<hr class="text-light">
 						</div>
 						<div class="flex justify-between items-center">
-							<h1 class="font-semibold text-2xl text-primary">UI vs UX: Simple But Vital <br>
+							<h1 class="font-semibold laptop-sm:text-xl desktop:text-2xl text-primary">UI vs UX: Simple
+								But Vital <br>
 								Differences</h1>
-							<div href="#"
+							<a href="#"
 								class="p-4 bg-secondary rounded-4xl hover:scale-110 hover:rotate-[360deg] duration-200">
 								<img class="max-w-6" src="/src/asset/icon/white-arrow.png" alt="">
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -426,25 +599,27 @@
 		</div>
 		<div class="p-16">
 			<div class="flex items-center gap-7">
-				<h1 class="text-primary text-9xl font-bold">HAVE A PROJECT?</h1>
-				<img class="max-w-[100px] hover:-rotate-[720deg] duration-1000" src="/src/asset/icon/logo.png" alt="">
+				<h1 class="text-primary laptop-sm:text-[60px] desktop:text-9xl font-bold">HAVE A PROJECT?</h1>
+				<img class="max-w-[100px] hover:rotate-[360deg] duration-1000" src="/src/asset/icon/logo.png" alt="">
 			</div>
-			<div class="flex items-center justify-between">
+			<div class="flex items-center gap-6 justify-between">
 				<a class="flex gap-4 py-4 px-8 border border-primary text-sm font-bold text-primary hover:text-white hover:bg-primary duration-300"
 					href="#">Hire Me
 					<img class="max-w-6" src="/src/asset/icon/orange-arrow.png" alt=""></a>
-				<h2 class="text-base font-normal text-grey">Whether you need clean UI design, <br>
+				<h2 class="text-base laptop-sm:max-w-[286px] font-normal text-grey">Whether you need clean UI design,
+					<br>
 					thoughtful UX, or front-end code that <br>
 					brings it all to life — I’m here to make it<br>
-					happen.</h2>
-				<h1 class="text-primary text-9xl font-bold">LET’S TALK</h1>
+					happen.
+				</h2>
+				<h1 class="text-primary laptop-sm:text-[60px] desktop:text-9xl font-bold">LET’S TALK</h1>
 			</div>
 		</div>
 	</section>
 	<!-- blog -->
 	<!-- footer -->
 	<section class="flex justify-center bg-zinc-900">
-		<div class="max-w-[1440px] py-[105px] flex flex-col gap-[20px]">
+		<div class="desktop:max-w-[1440px] py-[105px] flex flex-col gap-[20px]">
 			<div class="px-12 flex justify-between">
 				<div class="flex flex-col gap-3">
 					<a class="font-medium text-base text-white" href="#">About</a>
@@ -462,7 +637,26 @@
 					<h1 class="font-medium text-base text-white">Behance</h1>
 				</div>
 			</div>
-			<h1 class="text-[380px] font-normal text-white text-center">DAMIAN</h1>\
+			<div class="flex justify-center">
+				<h1
+					class="animate-bounce laptop-sm:text-[240px] laptop:text-[320px] desktop:text-[380px] font-normal text-white text-center">
+					D</h1>
+				<h1
+					class="animate-bounce laptop-sm:text-[240px] laptop:text-[320px] desktop:text-[380px] font-normal text-white text-center">
+					A</h1>
+				<h1
+					class="animate-bounce laptop-sm:text-[240px] laptop:text-[320px] desktop:text-[380px] font-normal text-white text-center">
+					M</h1>
+				<h1
+					class="animate-bounce laptop-sm:text-[240px] laptop:text-[320px] desktop:text-[380px] font-normal text-white text-center">
+					I</h1>
+				<h1
+					class="animate-bounce laptop-sm:text-[240px] laptop:text-[320px] desktop:text-[380px] font-normal text-white text-center">
+					A</h1>
+				<h1
+					class="animate-bounce laptop-sm:text-[240px] laptop:text-[320px] desktop:text-[380px] font-normal text-white text-center">
+					N</h1>
+			</div>
 			<div class="flex px-12 justify-between">
 				<h1 class="font-medium text-base text-white">Copyright 2025, All Right Reserved</h1>
 				<h1 class="font-medium text-base text-white">Terms & Condition</h1>
